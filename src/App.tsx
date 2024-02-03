@@ -1,7 +1,13 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
+import Navigation from "./router/Navigation";
 
 const App: React.FC = () => {
-  return <div></div>;
+  return (
+    <>
+      <Navigation />
+      <Outlet />
+    </>
+  );
 };
 
 export default App;
